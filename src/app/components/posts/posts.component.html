@@ -1,0 +1,7 @@
+<h1>posts</h1>
+
+<app-post-item *ngFor="let pst of posts" [pot]="pst" (hidepost)="hidePost($event)"></app-post-item>
+
+<h2>my-votes : {{posts[0].votes}}</h2>
+
+<app-create-post (addPost)="adddpost($event)" ></app-create-post>
